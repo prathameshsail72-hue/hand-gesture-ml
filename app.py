@@ -2,6 +2,7 @@ import cv2
 from src.hand_segmentation import segment_hand, get_contour
 from src.gesture_classifier import count_fingers, classify_gesture
 from src.utils import draw_text
+from src.action_controller import perform_action
 
 def main():
     cap = cv2.VideoCapture(0)
@@ -21,6 +22,8 @@ def main():
         if contour is not None:
             finger_count = count_fingers(contour)
             gesture = classify_gesture(finger_count)
+
+            perform_action(gesture)   # 🔥 NEW LINE
 
             cv2.drawContours(frame, [contour], -1, (0, 255, 0), 2)
 
