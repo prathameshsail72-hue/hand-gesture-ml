@@ -1,8 +1,8 @@
-# 🖐️ Hand Gesture Recognition using OpenCV
+# 🖐️ Hand Gesture Controlled System using OpenCV
 
 ## 📌 Overview
 
-This project implements a **real-time hand gesture recognition system** using computer vision techniques.
+This project demonstrates how computer vision can be used to interact with a system without physical input devices.
 Unlike many implementations, this project does **not rely on pre-trained frameworks** and instead uses pure OpenCV-based image processing.
 
 The system detects hand regions, extracts contours, counts fingers, and classifies gestures in real-time using a webcam.
@@ -17,6 +17,8 @@ The system detects hand regions, extracts contours, counts fingers, and classifi
 * Finger counting using convex hull & convexity defects
 * Gesture classification (Fist, One, Two, Open Hand, etc.)
 * Clean and modular project structure
+*  Real-time gesture-based system control (volume, play/pause)
+* Automation using PyAutoGUI
 
 ---
 
@@ -101,6 +103,17 @@ to exit the application.
 
 ---
 
+## 🎮 Gesture Controls
+
+| Gesture | Action |
+|--------|--------|
+| ✊ Fist | Play / Pause |
+| ☝️ One Finger | Volume Up |
+| ✌️ Two Fingers | Volume Down |
+| ✋ Open Hand | Play |
+
+---
+
 ## 📸 Demo
 
 *Add screenshots or GIFs here showing:*
@@ -149,6 +162,13 @@ Feel free to open issues or submit pull requests.
 
 This project is open-source and available under the MIT License.
 
+---
+
+## ⚠️ Safety Note
+
+This application controls system inputs using automation.
+- Avoid running while typing or working on important tasks
+- Keep keyboard access to stop execution (`q` to quit)
 ---
 
 ## 👨‍💻 Author
