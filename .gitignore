@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python environment files
+.env
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# OpenCV temporary files (optional)
+*.avi
+*.mp4
+
+# Cache
+.cache/
